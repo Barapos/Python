@@ -1,6 +1,6 @@
 # Definición de la clase Cliente, que representa a un cliente con nombre, email y teléfono.
 class Cliente:
-    # Constructor de la clase Cliente. Se inicializan los atributos nombre, email y telefono.
+    # Constructor de la clase Cliente. Se inicializan los atributos, nombre, email y telefono.
     def __init__(self, nombre, email, telefono):
         self.nombre = nombre
         self.email = email
@@ -63,10 +63,10 @@ def main():
         print("4. Listar Clientes")
         print("5. Salir")
 
-        opcion = input("Seleccione una opción: ")
+        option = input("Seleccione una opción: ")
 
         # Opción 1: Agregar un nuevo cliente al sistema.
-        if opcion == '1':
+        if option == '1':
             nombre = input("Ingrese el nombre del cliente: ")
             email = input("Ingrese el email del cliente: ")
             telefono = input("Ingrese el teléfono del cliente: ")
@@ -74,12 +74,12 @@ def main():
             sistema.agregar_cliente(cliente)
 
         # Opción 2: Eliminar un cliente del sistema.
-        elif opcion == '2':
+        elif option == '2':
             nombre = input("Ingrese el nombre del cliente a eliminar: ")
             sistema.eliminar_cliente(nombre)
 
         # Opción 3: Buscar un cliente por su nombre.
-        elif opcion == '3':
+        elif option == '3':
             nombre = input("Ingrese el nombre del cliente a buscar: ")
             cliente = sistema.buscar_cliente(nombre)
             if cliente:
@@ -88,11 +88,11 @@ def main():
                 print("Cliente no encontrado.")  # Mensaje si no se encuentra el cliente.
 
         # Opción 4: Listar todos los clientes registrados en el sistema.
-        elif opcion == '4':
+        elif option == '4':
             sistema.listar_clientes()
 
         # Opción 5: Salir del sistema.
-        elif opcion == '5':
+        elif option == '5':
             print("Saliendo del sistema...")
             break
 
