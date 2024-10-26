@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 .idea/
-.pdf
+*.pdf
 
 # Editor-based HTTP Client requests
 /httpRequests/
